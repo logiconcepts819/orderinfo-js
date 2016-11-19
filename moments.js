@@ -1,10 +1,22 @@
 var stylizeFraction = function(fraction)
 {
-    return '<div class="fracsign inline-div">'+
-           (fraction.s < 0 ? '&ndash;' : '+') +
-           '</div><div class="fracnum inline-div">'+fraction.n+
+    var s = 1;
+    var n = fraction.numerator;
+    var d = fraction.denominator;
+    if (d < 0)
+    {
+        n = -n;
+        d = -d;
+    }
+    if (n < 0)
+    {
+        n = -n;
+        s = -s;
+    }
+    return '<div class="fracsign inline-div">'+(s<0?'&ndash;':'+')+
+           '</div><div class="fracnum inline-div">'+n+
            '</div><div class="fracslash inline-div">/'+
-           '</div><div class="fracden inline-div">'+fraction.d+'</div>';
+           '</div><div class="fracden inline-div">'+d+'</div>';
 }
 
 var createBlankTable = function(j, threek, polmom)
