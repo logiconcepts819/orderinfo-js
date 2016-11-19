@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+}
+
+#maxJInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+#moment_table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#moment_table tr > td {
+    padding: 10px;
+}
+
+#moment_table > thead > tr > td {
+    background-color: #000;
+    color: #fff;
+}
+
+#moment_table > tbody > tr > td {
+    background-color: #ccf;
+}
+
+#moment_table > thead {
+    font-weight: bold;
+    text-align: center;
+}
+
+#moment_var_cell {
+    text-align: right;
+    width: 100px;
+}
+
+#moment_cell {
+    text-align: center;
+    width: 80%;
+}
+
+.fracsign  { width: 25px; }
+.fracnum   { width: calc(50% - 35px); }
+.fracslash { width: 25px; }
+.fracden   { width: calc(50% - 35px); }
+
+.inline-div {
+    display: inline-block;
+}

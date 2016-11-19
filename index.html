@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gaussian Quadrature Moments Calculator</title>
+        <link rel="stylesheet"
+              href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet"
+              href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="index.css"/>
+        <script type="text/javascript" src="fraction.min.js"></script>
+        <script type="text/javascript" src="orderinfo.js"></script>
+        <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript"
+                src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="moments.js"></script>
+    </head>
+    <body>
+        <form>
+            <div class="form-group">
+                <label for="maxJ">List moments up to this value of j</label>
+                <select class="form-control" id="maxJInput">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option selected="true">10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary"
+                    onclick="generateMomentTable();">Generate</button>
+        </form>
+        <div id="moment_table_area"></div>
+    </body>
+</html>
