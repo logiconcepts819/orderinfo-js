@@ -13,9 +13,9 @@ var stylizeFraction = function(fraction, idx)
         n = -n;
         s = -s;
     }
-    return '<div class="fracsign inline-div">'+(s<0?'&ndash;':'+')+
+    return '<div class="fracsign inline-div">'+(s<0?'&ndash;':'+')+'&nbsp;'+
            '</div><div class="fracnum inline-div" id="num'+idx+'">'+n+
-           '</div><div class="fracslash inline-div">/'+
+           '</div><div class="fracslash inline-div">&nbsp;/&nbsp;'+
            '</div><div class="fracden inline-div" id="den'+idx+'">'+d+'</div>';
 }
 
