@@ -13,6 +13,8 @@ body {
     border-spacing: 5px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    width: 100%;
 }
 
 #moment_table tr > td {
@@ -33,21 +35,18 @@ body {
     text-align: center;
 }
 
-#moment_var_cell {
+.moment_var_cell {
     text-align: right;
     width: 100px;
 }
 
-#moment_cell {
+.moment_cell {
     text-align: center;
-    width: 80%;
 }
-
-.fracsign  { width: 25px; }
-.fracnum   { width: calc(50% - 35px); }
-.fracslash { width: 25px; }
-.fracden   { width: calc(50% - 35px); }
 
 .inline-div {
     display: inline-block;
 }
+
+.fracnum { text-align: right; }
+.fracden { text-align: left;  }
